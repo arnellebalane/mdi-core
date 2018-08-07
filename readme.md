@@ -33,6 +33,11 @@ mdi(options);
 - `output` (`String`): The output directory where the generated icons will be written to. Defaults to the current directory `.`.
 
 
+## Related Projects
+
+- [mdi-cli][4]: Generate material design icons from the command line
+
+
 ## License
 
 MIT License
@@ -41,3 +46,4 @@ MIT License
 [1]: https://github.com/Templarian/MaterialDesign-SVG
 [2]: https://materialdesignicons.com/
 [3]: https://github.com/Templarian/MaterialDesign-SVG/tree/master/svg
+[4]: https://github.com/arnellebalane/mdi-cli
