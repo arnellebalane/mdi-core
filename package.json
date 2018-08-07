@@ -1,0 +1,16 @@
+{
+  "name": "mdi-core",
+  "version": "0.0.0-development",
+  "description": "Node module for generating material design icons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mdi",
+    "material-design",
+    "icons"
+  ],
+  "author": "Arnelle Balane <arnellebalane@gmail.com> (https://arnellebalane.com/)",
+  "license": "MIT"
+}
