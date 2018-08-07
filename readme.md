@@ -24,7 +24,7 @@ mdi(options);
 
 ## Options
 
-- `icons` (`Array`): The names of the icons to generate. Please refer to [`@mdi/svg`'s available icons][3] for a complete list of icons that can be generated.
+- `names` (`Array`): The names of the icons to generate. Please refer to [`@mdi/svg`'s available icons][3] for a complete list of icons that can be generated.
 - `size` (`Number`): The size of the icon to generate, in pixels. Defaults to `24px`.
 - `padding` (`Number`): The padding on the icon to generate, in pixels. Defaults to `0px`.
 - `radius` (`Number`): The border radius of the icon to generate, in pixels. Defaults to `0px`.
