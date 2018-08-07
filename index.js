@@ -24,7 +24,17 @@ function getPageUrl(config) {
     return 'data:text/html;base64,' + base64;
 }
 
-module.exports = async config => {
+const defaultOptions = {
+    size: 24,
+    padding: 0,
+    radius: 0,
+    foreground: '#333',
+    background: 'transparent',
+    output: '.'
+};
+
+module.exports = async options => {
+    const config = Object.assign({}, defaultOptions, options);
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(getPageUrl(config));
