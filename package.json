@@ -32,5 +32,13 @@
     "ghooks": {
       "pre-push": "npm run lint"
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnellebalane/mdi-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arnellebalane/mdi-core/issues"
+  },
+  "homepage": "https://github.com/arnellebalane/mdi-core#readme"
 }
