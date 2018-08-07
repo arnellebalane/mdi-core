@@ -20,6 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "@mdi/svg": "2.5.94",
+    "find-node-modules": "1.0.4",
     "handlebars": "4.0.11",
     "puppeteer": "1.6.2"
   },
