@@ -4,7 +4,8 @@
   "description": "Node module for generating material design icons",
   "main": "index.js",
   "scripts": {
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "lint": "eslint *.js"
   },
   "keywords": [
     "mdi",
