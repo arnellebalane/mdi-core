@@ -1,7 +1,7 @@
 {
   "name": "mdi-core",
   "version": "0.0.0-development",
-  "description": "Node module for generating material design icons",
+  "description": "Node module for generating Material Design icons",
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
