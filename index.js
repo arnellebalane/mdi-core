@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer');
 const handlebars = require('handlebars');
 const findNodeModules = require('find-node-modules');
 
-const nodeModulesPath = findNodeModules({relative: false})[0];
+const nodeModulesPath = findNodeModules({cwd: __dirname, relative: false})[0];
 const templatePath = path.resolve(__dirname, 'index.html');
 const iconsBasePath = path.resolve(nodeModulesPath, '@mdi/svg/svg');
 
