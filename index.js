@@ -13,7 +13,7 @@ function getPageUrl(config) {
     const template = handlebars.compile(templateContents);
 
     config.icons = config.names.map(iconName => {
-        const iconPath = path.resolve(iconsBasePath, iconName + '.svg');
+        const iconPath = path.resolve(iconsBasePath, `${iconName}.svg`);
         const iconContents = fs.readFileSync(iconPath, 'utf8');
         const svgIndex = iconContents.indexOf('<svg');
         const icon = iconContents.slice(svgIndex);
@@ -23,7 +23,7 @@ function getPageUrl(config) {
     const rendered = template(config);
     const base64 = Buffer.from(rendered).toString('base64');
 
-    return 'data:text/html;base64,' + base64;
+    return `data:text/html;base64,${base64}`;
 }
 
 const defaultOptions = {
@@ -36,14 +36,13 @@ const defaultOptions = {
 };
 
 module.exports = async options => {
-    const config = Object.assign({}, defaultOptions, options);
+    const config = {...defaultOptions, ...options};
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(getPageUrl(config));
 
     const iconNames = await page.$$eval('div', divs => divs.map(div => div.id));
-    const iconPaths = iconNames.map(
-        iconName => path.resolve(config.output, `${iconName}.png`));
+    const iconPaths = iconNames.map(iconName => path.resolve(config.output, `${iconName}.png`));
     const iconHandles = await page.$$('div');
 
     await Promise.all(iconHandles.map((iconHandle, i) => iconHandle.screenshot({
