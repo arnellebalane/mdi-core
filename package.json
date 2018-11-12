@@ -39,6 +39,17 @@
       "pre-push": "npm run lint"
     }
   },
+  "eslintConfig": {
+    "extends": [
+      "arnellebalane"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arnellebalane/mdi-core.git"
