@@ -1,6 +1,6 @@
 {
   "name": "mdi-core",
-  "version": "0.0.0-development",
+  "version": "1.0.2",
   "description": "Node module for generating Material Design icons",
   "main": "index.js",
   "scripts": {
